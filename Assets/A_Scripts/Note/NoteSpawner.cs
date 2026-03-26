@@ -103,7 +103,7 @@ public class NoteSpawner : MonoBehaviour
 
         // 获取当前播放时间
         float currentTime = audioSource.time;
-        Debug.Log($"当前播放时间: {currentTime}");
+        //Debug.Log($"当前播放时间: {currentTime}");
 
         // 生成应该出现的音符
         while (nextNoteIndex < chart.Count)
@@ -113,7 +113,7 @@ public class NoteSpawner : MonoBehaviour
 
 
             // 如果音符的时间 <= 当前时间 + 提前量，就生成
-            if (noteData.time <= currentTime + 1f)  // 提前几秒生成就意味着在轨道上移动几秒！！！就是速度！！！！
+            if (noteData.time <= currentTime + 0.5f)  // 提前几秒生成就意味着在轨道上移动几秒！！！就是速度！！！！
             {
                 SpawnNote(noteData);
                 nextNoteIndex++;

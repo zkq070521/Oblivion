@@ -26,7 +26,7 @@ public class NoteBehaviour : MonoBehaviour
     private bool isJudged;      // 是否已经被判定
     private bool isAtJudgeLine;  // 是否已到达判定线
     private float arrivalTime;           // 到达判定线的时间
-    public float judgeWindow = 0.5f;
+    public float judgeWindow = 1f;
 
     public static System.Action<GameObject, Transform, NoteData_SO.NoteType> OnNoteHit;
     public static System.Action<bool> OnNoteDestroy;
@@ -42,6 +42,10 @@ public class NoteBehaviour : MonoBehaviour
         {
             spriteRenderer = gameObject.AddComponent<SpriteRenderer>();
         }
+
+        //初始化currentTime
+        currentTime = 0f;
+
     }
 
     void Start()
@@ -61,8 +65,6 @@ public class NoteBehaviour : MonoBehaviour
             //CreateDefaultSprite();
         }
 
-        //初始化currentTime
-        currentTime = 0f;
 
         //  自动计算移动时间（基于速度）
         float distance = Vector3.Distance(startPosition.position, endPosition.position);
@@ -91,7 +93,7 @@ public class NoteBehaviour : MonoBehaviour
         float progress = currentTime / moveDuration;
 
 
-        if (progress >= 1f)
+        if (progress >= 0.92f)
         {
             // 到达判定线！不销毁，而是进入等待判定状态
             if (!isAtJudgeLine)
@@ -218,6 +220,7 @@ public class NoteBehaviour : MonoBehaviour
 
         // 判定成功！
         isJudged = true;
+        OnNoteHit?.Invoke(this.gameObject, transform, noteData.type);
         OnNoteDestroy?.Invoke(true);
         Destroy(gameObject);
 

@@ -7,14 +7,28 @@
       "notes": [
         {"lane": 5, "time":-4.06, "type": 0, "spriteName": "normalkey"},
         {"lane": 5, "time":-4.16, "type": 0, "spriteName": "normalkey"},
-        {"lane": 5, "time": 5.0, "type": 0, "spriteName": "normalkey"},
- {"lane": 5, "time": 6.0, "type": 0, "spriteName": "normalkey"},
-        {"lane": 4, "time": 8.0, "type": 1, "spriteName": "holdkey"},
-        {"lane": 2, "time": 9.0, "type": 0, "spriteName": "normalkey"},
+        {"lane": 0, "time": 0.19, "type": 0, "spriteName": "normalkey"},
+        {"lane": 4, "time": 0.23, "type": 0, "spriteName": "normalkey"},
 
- {"lane": 0, "time": 10.0, "type": 0, "spriteName": "normalkey"},
-        {"lane": 1, "time": 12.0, "type": 1, "spriteName": "holdkey"},
-        {"lane": 2, "time": 13.0, "type": 0, "spriteName": "normalkey"}
+        {"lane": 4, "time":0.29, "type": 1, "spriteName": "holdkey"},
+        {"lane": 2, "time": 1.08, "type": 0, "spriteName": "normalkey"},
+
+         {"lane": 5, "time":1.22, "type": 4, "spriteName": "upkey"},
+        {"lane": 0, "time": 2.04, "type": 0, "spriteName": "normalkey"},
+        {"lane": 0, "time": 2.08, "type": 1, "spriteName": "holdkey"},
+        {"lane": 4, "time": 2.18, "type": 0, "spriteName": "normalkey"},
+        {"lane": 0, "time": 3, "type": 0, "spriteName": "normalkey"},
+        {"lane": 4, "time": 3.5, "type": 0, "spriteName": "normalkey"},
+
+        {"lane": 4, "time":4, "type": 1, "spriteName": "holdkey"},
+        {"lane": 2, "time": 4.5, "type": 0, "spriteName": "normalkey"},
+
+        {"lane": 5, "time":5, "type": 4, "spriteName": "upkey"},
+        {"lane": 0, "time": 5.5, "type": 0, "spriteName": "normalkey"},
+        {"lane": 0, "time": 6, "type": 1, "spriteName": "holdkey"},
+        {"lane": 4, "time": 6.5, "type": 0, "spriteName": "normalkey"}
+
+
 
               ]
     }  ]

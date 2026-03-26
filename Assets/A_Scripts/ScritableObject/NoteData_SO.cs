@@ -21,8 +21,8 @@ public class NoteData_SO : ScriptableObject
     public enum NoteType
     {
         Normal,     // 普通音符 - 点击一下
-        Hold,       // 长按音符 - 按住不放
-        //Chain,      // 连按音符 - 连续点击
+        Hold,
+        Chain,      // 连按音符 - 连续点击    
         SwipeDown,  // 向下划音符
         SwipeUp,    // 向上划音符
 
