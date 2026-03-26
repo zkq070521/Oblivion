@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:yousandi.cn,2023:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MenuScene.scene
+    guid: 6a3362b0707666b418940c135f61df2e
+  - enabled: 1
+    path: Assets/Scenes/LoadingScene.scene
+    guid: 4a2cc5cb9a65e6a49a3f290fa481df08
+  - enabled: 1
+    path: Assets/Scenes/Song1.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  m_BuildProfiles: []
+  m_configObjects: {}
+  m_SlimFeaturesWeixinMiniGame:
+    ACLDecompression: 0
+    AllocateOverhead: 1
+    DecompressASTC: 0
+    DecompressDXT: 0
+    DecompressETC: 1
+    FreeTypeSfntPng: 1
+    LightProbe: 2
+    RootMotion: 0
+    UseStringInternPool: 2
