@@ -93,7 +93,7 @@ public class NoteBehaviour : MonoBehaviour
         float progress = currentTime / moveDuration;
 
 
-        if (progress >= 0.92f)
+        if (progress >= 0.95f)
         {
             // 到达判定线！不销毁，而是进入等待判定状态
             if (!isAtJudgeLine)

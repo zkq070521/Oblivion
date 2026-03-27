@@ -71,33 +71,33 @@ public class NoteSpawner : MonoBehaviour
 
     void Update()
     {
-        if (!isMusicStart)
-        {
-            // 音乐还没开始，用场景时间生成负数时间的音符
-            float sceneTime = Time.time - sceneStartTime;
+        // if (!isMusicStart)
+        // {
+        //     // 音乐还没开始，用场景时间生成负数时间的音符
+        //     float sceneTime = Time.time - sceneStartTime;
 
-            while (nextNoteIndex < chart.Count)
-            {
-                NoteData_SO noteData = chart[nextNoteIndex];
+        //     while (nextNoteIndex < chart.Count)
+        //     {
+        //         NoteData_SO noteData = chart[nextNoteIndex];
 
-                // 负数时间：场景时间到了就生成
-                if (-noteData.time <= sceneTime + 1f && noteData.time < 0)
-                {
-                    SpawnNote(noteData);
-                    nextNoteIndex++;
-                }
-                else break;
-            }
+        //         // 负数时间：场景时间到了就生成
+        //         if (-noteData.time <= sceneTime + 1f && noteData.time < 0)
+        //         {
+        //             SpawnNote(noteData);
+        //             nextNoteIndex++;
+        //         }
+        //         else break;
+        //     }
 
-            // 检查是否所有引导音符都被击中了
-            // if (allGuideNotesHit)
-            // {
-            //     isMusicStarted = true;
-            //     audioSource.Play();
-            // }
+        // 检查是否所有引导音符都被击中了
+        //     if (allGuideNotesHit)
+        // {
+        //         isMusicStarted = true;
+        //         audioSource.Play();
+        //     }
 
-            return;
-        }
+        //     return;
+        // }
 
         if (!isPlaying) return;
 
